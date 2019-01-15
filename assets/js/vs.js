@@ -67,7 +67,7 @@ g.append("g")
   .attr("y", 6)
   .attr("dy", "0.71em")
   .attr("text-anchor", "end")
-  .attr("fill", "#5D6971")
+  .attr("fill", "#ffffff")
   .text("Aantal domeinen");
 
 g.selectAll(".bar")
