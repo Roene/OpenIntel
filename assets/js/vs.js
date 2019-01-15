@@ -34,7 +34,7 @@ var svg = d3.select("svg"),
   width = +svg.attr("width") - margin.left - margin.right,
   height = +svg.attr("height") - margin.top - margin.bottom;
 
-var tooltip = d3.select("body").append("div").attr("class");
+var tooltip = d3.select("body").append("div").attr("class", "toolTip");
 
 var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
   y = d3.scaleLinear().rangeRound([height, 0]);
@@ -86,3 +86,11 @@ g.selectAll(".bar")
   .attr("fill", function(d) {
     return colours(d.domainname);
   })
+  .on("mouseover", function(d){
+    tooltip
+      .style("left", d3.event.pageX - 50 + "px")
+      .style("top", d3.event.pageY - 70 + "px")
+      .style("display", "inline-block")
+      .html((d.domainname) + "<br>" + (d.value));
+})
+  .on("mouseout", function(d){ tooltip.style("display", "none");});
