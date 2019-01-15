@@ -1,15 +1,17 @@
 html {
   height: 100vh;
   font-family: system-ui;
-  background-color: red;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
   font-size: 1.5em;
   text-align: center;
-  margin-top: 25%;
 }
-
 
 /* ////////////////////// BUTTONS ////////////////////// */
 
@@ -43,4 +45,32 @@ a:hover {
 
 .round {
   border-radius: 50%;
+}
+
+/* //////////////////////////// BAR CHART //////////////////////////////// */
+svg {
+  margin-left: 2%;
+}
+
+.axis {
+  font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 14px;
+  text-align: center;
 }
