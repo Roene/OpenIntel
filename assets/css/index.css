@@ -12,13 +12,26 @@ body {
 
 /* //////////////////// TEXT /////////////////////// */
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   color: #ffffff;
 }
 
 #centerH1 {
   margin-top: 25%;
+}
+
+h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10%;
 }
 
 /* ////////////////////// BUTTONS ////////////////////// */
@@ -55,9 +68,13 @@ a:hover {
   border-radius: 50%;
 }
 
+#bigButton {
+  padding: 16px 24px;
+}
+
 /* //////////////////////////// BAR CHART //////////////////////////////// */
 svg {
-  margin-left: 2%;
+  float: right;
 }
 
 .axis {
@@ -83,3 +100,5 @@ svg {
   padding: 14px;
   text-align: center;
 }
+
+/* /////////////////////// DROPDOWN //////////////////////// */
