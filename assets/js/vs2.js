@@ -28,22 +28,6 @@ var data2 = [{    // 1 Oktober 2016
     "domain": "nl"
 }]
 
-// var select = document.getElementById("opts").addEventListener("change", change);
-
-// function change(value){
-
-//   if(value === 'data1'){
-//     update(data1);
-//     console.log("data 1")
-//   }else if(value === 'data2'){
-//     update(data2);
-//     console.log("data 2")
-//   }else{
-//     update(data);
-//   }
-//   console.log("iets")
-// }
-
 d3.select("#opts")
   .on('change', function() {
     var data = eval(d3.select(this).property('value'));
