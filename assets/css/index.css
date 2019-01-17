@@ -17,9 +17,6 @@ h1 {
   color: #ffffff;
 }
 
-#centerH1 {
-  margin-top: 25%;
-}
 
 h2 {
   font-size: 1.8em;
@@ -32,6 +29,20 @@ h3 {
   text-align: center;
   color: #ffffff;
   margin-top: 10%;
+}
+
+/* /////////////////////// SECTIONS //////////////////// */
+.main {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+/* /////////////////////// IMAGES ////////////////////// */
+.main img {
+  width: 15em;
+  margin-top: 2em;
+  justify-content: center;
 }
 
 /* ////////////////////// BUTTONS ////////////////////// */
