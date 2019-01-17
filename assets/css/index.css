@@ -17,7 +17,6 @@ h1 {
   color: #ffffff;
 }
 
-
 h2 {
   font-size: 1.8em;
   text-align: center;
@@ -25,10 +24,19 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-align: center;
   color: #ffffff;
-  margin-top: 10%;
+  margin-top: 5%;
+}
+
+p {
+  font-size: 1.1em; 
+  color: #ffffff;
+}
+
+#left {
+  text-align: left
 }
 
 /* /////////////////////// SECTIONS //////////////////// */
@@ -36,6 +44,12 @@ h3 {
   margin: auto;
   justify-content: center;
   text-align: center;
+}
+
+.intro {
+  margin-top: 10em;
+  width: 40%;
+  margin-left: 2em;
 }
 
 /* /////////////////////// IMAGES ////////////////////// */
@@ -61,22 +75,27 @@ a {
 }
 
 a:hover {
-  background-color: #ddd;
+  background-color: #b5dbe8;
   color: black;
 }
 
 .previous {
-  background-color: #f5f6fa;
+  background-color: #c5e3ed;
   color: black;
 }
 
 .next {
-  background-color: #f5f6fa;
+  background-color: #c5e3ed;
   color: black;
 }
 
 .round {
   border-radius: 50%;
+}
+
+#buttonIntro {
+  position: fixed;
+  margin-left: 49%;
 }
 
 #bigButton {
